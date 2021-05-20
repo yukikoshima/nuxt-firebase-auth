@@ -48,13 +48,7 @@ export default {
       "@nuxtjs/firebase",
       {
         config: {
-          apiKey: "AIzaSyBBSK_aMSdsEhRq9jQ4vYJmqqOLAzO4ZGc",
-          authDomain: "nuxt-firebase-auth-9c5d4.firebaseapp.com",
-          projectId: "nuxt-firebase-auth-9c5d4",
-          storageBucket: "nuxt-firebase-auth-9c5d4.appspot.com",
-          messagingSenderId: "854960494666",
-          appId: "1:854960494666:web:00075a8574a84375796eb3",
-          measurementId: "G-EF87LQYBJE"
+          
         },
         services: {
           auth: {
