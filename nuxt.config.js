@@ -1,5 +1,8 @@
 import colors from "vuetify/es5/util/colors";
 
+// const key = "AIzaSyBBSK_aMSdsEhRq9jQ4vYJmqqOLAzO4ZGc";
+// const key = process.env.API_KEY;
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -48,7 +51,13 @@ export default {
       "@nuxtjs/firebase",
       {
         config: {
-          
+          apiKey: process.env.API_KEY,
+          authDomain: process.env.AUTH_DOMAIN,
+          projectId: process.env.PROJECT_ID,
+          storageBucket: process.env.STORAGE_BUCKET,
+          messagingSenderId: process.env.MESSAGING_SENDER_ID,
+          appId: process.env.APP_ID,
+          measurementId: process.env.MEASUREMENT_ID
         },
         services: {
           auth: {
